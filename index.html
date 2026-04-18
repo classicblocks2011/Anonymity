@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anonymity | Ethical Security Group</title>
+
+<style>
+body{
+  margin:0;
+  font-family:monospace;
+  background:#0a0a0a;
+  color:#00ff88;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 30px;
+  border-bottom:1px solid #00ff88;
+}
+
+nav h1{
+  margin:0;
+}
+
+nav a{
+  color:#00ff88;
+  text-decoration:none;
+  margin-left:15px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:48px;
+}
+
+.hero p{
+  color:#aaa;
+}
+
+/* BUTTON */
+.btn{
+  margin-top:20px;
+  padding:10px 20px;
+  border:1px solid #00ff88;
+  background:none;
+  color:#00ff88;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+.section{
+  padding:60px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  border:1px solid #00ff88;
+  padding:20px;
+  margin-top:20px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #00ff88;
+  color:#777;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>ANONYMITY</h1>
+  <div>
+    <a href="#about">About</a>
+    <a href="#tools">Tools</a>
+    <a href="#join">Join</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>We Are Anonymity</h1>
+  <p>Ethical Security • Knowledge • Control</p>
+  <button class="btn" onclick="scrollToJoin()">Join Us</button>
+</section>
+
+<section id="about" class="section">
+  <h2>About</h2>
+  <p>
+    Anonymity es una comunidad enfocada en ciberseguridad, aprendizaje y uso responsable de herramientas.
+    Nuestro objetivo es mejorar habilidades técnicas sin comprometer la ética.
+  </p>
+</section>
+
+<section id="tools" class="section">
+  <h2>BlackNode</h2>
+  <div class="card">
+    <h3>BlackNode Framework</h3>
+    <p>
+      Plataforma desarrollada para gestión de herramientas en entornos como Termux y Linux.
+      Diseñada para eficiencia, control y uso técnico avanzado.
+    </p>
+  </div>
+</section>
+
+<section id="join" class="section">
+  <h2>Join</h2>
+  <p>Únete a nuestra comunidad en Discord:</p>
+  <button class="btn" onclick="join()">Entrar</button>
+</section>
+
+<footer>
+  <p>© Anonymity Group • Ethical Security Only</p>
+</footer>
+
+<script>
+function scrollToJoin(){
+  document.getElementById("join").scrollIntoView({behavior:"smooth"});
+}
+
+function join(){
+  alert("https://discord.gg/25CDqQNvg");
+}
+</script>
+
+</body>
+</html>
